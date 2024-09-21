@@ -59,12 +59,12 @@ contract DIOToken is ERC20Interface, SafeMath {
     mapping(address => mapping(address => uint)) allowed;
  
     constructor() public {
-        symbol = "DIO";
-        name = "DIO Coin";
+        symbol = "Nadj";
+        name = "Nadj Coin";
         decimals = 2;
         _totalSupply = 100000;
-        balances[YOUR_METAMASK_WALLET_ADDRESS] = _totalSupply;
-        emit Transfer(address(0), YOUR_METAMASK_WALLET_ADDRESS, _totalSupply);
+        balances[0x7854b66Cd5F1e00a3Dd7e286B556CE86dc775218] = _totalSupply;
+        emit Transfer(address(0), 0x7854b66Cd5F1e00a3Dd7e286B556CE86dc775218, _totalSupply);
     }
  
     function totalSupply() public constant returns (uint) {
